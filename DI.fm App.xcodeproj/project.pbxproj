@@ -13,6 +13,10 @@
 		C086B36B26C434E600339405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C086B36926C434E600339405 /* Main.storyboard */; };
 		C086B37526C435F000339405 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C086B37426C435F000339405 /* SnapKit */; };
 		C086B37826C4360A00339405 /* LoremSwiftum in Frameworks */ = {isa = PBXBuildFile; productRef = C086B37726C4360A00339405 /* LoremSwiftum */; };
+		C099357526C44D8D006E8B60 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C099357426C44D8D006E8B60 /* Alamofire */; };
+		C099357826C44DF4006E8B60 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C099357726C44DF4006E8B60 /* Kingfisher */; };
+		C099357A26C44F43006E8B60 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = C099357926C44F43006E8B60 /* Api.swift */; };
+		C099357D26C45001006E8B60 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C099357C26C45001006E8B60 /* Channel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,8 @@
 		C086B36A26C434E600339405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C086B36C26C434E600339405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C086B36D26C434E600339405 /* DI_fm_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DI_fm_App.entitlements; sourceTree = "<group>"; };
+		C099357926C44F43006E8B60 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		C099357C26C45001006E8B60 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C099357826C44DF4006E8B60 /* Kingfisher in Frameworks */,
+				C099357526C44D8D006E8B60 /* Alamofire in Frameworks */,
 				C086B37826C4360A00339405 /* LoremSwiftum in Frameworks */,
 				C086B37526C435F000339405 /* SnapKit in Frameworks */,
 			);
@@ -57,6 +65,8 @@
 		C086B36226C434E100339405 /* DI.fm App */ = {
 			isa = PBXGroup;
 			children = (
+				C099356D26C44C07006E8B60 /* Resources */,
+				C099356C26C44C01006E8B60 /* Sources */,
 				C086B36326C434E100339405 /* AppDelegate.swift */,
 				C086B36526C434E100339405 /* ViewController.swift */,
 				C086B36726C434E600339405 /* Assets.xcassets */,
@@ -65,6 +75,46 @@
 				C086B36D26C434E600339405 /* DI_fm_App.entitlements */,
 			);
 			path = "DI.fm App";
+			sourceTree = "<group>";
+		};
+		C099356C26C44C01006E8B60 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C099357B26C44FF7006E8B60 /* Models */,
+				C099356F26C44C20006E8B60 /* Network */,
+				C099356E26C44C18006E8B60 /* Concerns */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C099356D26C44C07006E8B60 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C099356E26C44C18006E8B60 /* Concerns */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Concerns;
+			sourceTree = "<group>";
+		};
+		C099356F26C44C20006E8B60 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C099357926C44F43006E8B60 /* Api.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C099357B26C44FF7006E8B60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C099357C26C45001006E8B60 /* Channel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +136,8 @@
 			packageProductDependencies = (
 				C086B37426C435F000339405 /* SnapKit */,
 				C086B37726C4360A00339405 /* LoremSwiftum */,
+				C099357426C44D8D006E8B60 /* Alamofire */,
+				C099357726C44DF4006E8B60 /* Kingfisher */,
 			);
 			productName = "DI.fm App";
 			productReference = C086B36026C434E100339405 /* DI.fm App.app */;
@@ -117,6 +169,8 @@
 			packageReferences = (
 				C086B37326C435F000339405 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				C086B37626C4360A00339405 /* XCRemoteSwiftPackageReference "LoremSwiftum" */,
+				C099357326C44D8D006E8B60 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C099357626C44DF4006E8B60 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = C086B36126C434E100339405 /* Products */;
 			projectDirPath = "";
@@ -144,6 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C099357A26C44F43006E8B60 /* Api.swift in Sources */,
+				C099357D26C45001006E8B60 /* Channel.swift in Sources */,
 				C086B36626C434E100339405 /* ViewController.swift in Sources */,
 				C086B36426C434E100339405 /* AppDelegate.swift in Sources */,
 			);
@@ -360,6 +416,22 @@
 				minimumVersion = 2.2.1;
 			};
 		};
+		C099357326C44D8D006E8B60 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		C099357626C44DF4006E8B60 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -372,6 +444,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C086B37626C4360A00339405 /* XCRemoteSwiftPackageReference "LoremSwiftum" */;
 			productName = LoremSwiftum;
+		};
+		C099357426C44D8D006E8B60 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C099357326C44D8D006E8B60 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C099357726C44DF4006E8B60 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C099357626C44DF4006E8B60 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
