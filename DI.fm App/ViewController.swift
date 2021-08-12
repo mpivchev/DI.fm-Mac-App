@@ -8,7 +8,7 @@
 import Cocoa
 import SnapKit
 
-class ViewController: NSViewController {
+class PopoverViewController: NSViewController {
     private let label = NSTextField(labelWithString: "Text")
 
     override func viewDidLoad() {
@@ -17,11 +17,8 @@ class ViewController: NSViewController {
         configure()
         layout()
 
-        Api.fetchChannels{ channels in
-            print(channels[0])
+        Api.logIn { user in
         }
-
-        // Do any additional setup after loading the view.
     }
 
     private func configure() {
@@ -34,12 +31,15 @@ class ViewController: NSViewController {
         }
     }
 
-//    override var representedObject: Any? {
-//        didSet {
-//        // Update the view, if already loaded.
-//        }
-//    }
+    static func new() -> PopoverViewController {
+        let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
+        let identifier = NSStoryboard.SceneIdentifier("PopoverViewController")
 
+        guard let viewcontroller = storyboard.instantiateController(withIdentifier: identifier) as? PopoverViewController else {
+            fatalError("Coult not instantiate.")
+        }
 
+        return viewcontroller
+    }
 }
 

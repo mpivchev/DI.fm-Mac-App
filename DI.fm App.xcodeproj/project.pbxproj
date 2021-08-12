@@ -17,6 +17,8 @@
 		C099357826C44DF4006E8B60 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C099357726C44DF4006E8B60 /* Kingfisher */; };
 		C099357A26C44F43006E8B60 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = C099357926C44F43006E8B60 /* Api.swift */; };
 		C099357D26C45001006E8B60 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C099357C26C45001006E8B60 /* Channel.swift */; };
+		C099357F26C58152006E8B60 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C099357E26C58152006E8B60 /* User.swift */; };
+		C099358226C58A23006E8B60 /* JSONDecoderExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C099358126C58A23006E8B60 /* JSONDecoderExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		C086B36D26C434E600339405 /* DI_fm_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DI_fm_App.entitlements; sourceTree = "<group>"; };
 		C099357926C44F43006E8B60 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		C099357C26C45001006E8B60 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		C099357E26C58152006E8B60 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C099358126C58A23006E8B60 /* JSONDecoderExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 		C099356C26C44C01006E8B60 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C099358026C58A0C006E8B60 /* Extensions */,
 				C099357B26C44FF7006E8B60 /* Models */,
 				C099356F26C44C20006E8B60 /* Network */,
 				C099356E26C44C18006E8B60 /* Concerns */,
@@ -113,8 +118,17 @@
 			isa = PBXGroup;
 			children = (
 				C099357C26C45001006E8B60 /* Channel.swift */,
+				C099357E26C58152006E8B60 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C099358026C58A0C006E8B60 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C099358126C58A23006E8B60 /* JSONDecoderExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +215,8 @@
 				C099357A26C44F43006E8B60 /* Api.swift in Sources */,
 				C099357D26C45001006E8B60 /* Channel.swift in Sources */,
 				C086B36626C434E100339405 /* ViewController.swift in Sources */,
+				C099357F26C58152006E8B60 /* User.swift in Sources */,
+				C099358226C58A23006E8B60 /* JSONDecoderExtensions.swift in Sources */,
 				C086B36426C434E100339405 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
