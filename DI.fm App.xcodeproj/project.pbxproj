@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C086B36426C434E100339405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C086B36326C434E100339405 /* AppDelegate.swift */; };
-		C086B36626C434E100339405 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C086B36526C434E100339405 /* ViewController.swift */; };
+		C086B36626C434E100339405 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C086B36526C434E100339405 /* LoginViewController.swift */; };
 		C086B36826C434E600339405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C086B36726C434E600339405 /* Assets.xcassets */; };
 		C086B36B26C434E600339405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C086B36926C434E600339405 /* Main.storyboard */; };
 		C086B37526C435F000339405 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C086B37426C435F000339405 /* SnapKit */; };
@@ -24,7 +24,7 @@
 /* Begin PBXFileReference section */
 		C086B36026C434E100339405 /* DI.fm App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DI.fm App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C086B36326C434E100339405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C086B36526C434E100339405 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C086B36526C434E100339405 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C086B36726C434E600339405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C086B36A26C434E600339405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C086B36C26C434E600339405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 				C099356D26C44C07006E8B60 /* Resources */,
 				C099356C26C44C01006E8B60 /* Sources */,
 				C086B36326C434E100339405 /* AppDelegate.swift */,
-				C086B36526C434E100339405 /* ViewController.swift */,
+				C086B36526C434E100339405 /* LoginViewController.swift */,
 				C086B36726C434E600339405 /* Assets.xcassets */,
 				C086B36926C434E600339405 /* Main.storyboard */,
 				C086B36C26C434E600339405 /* Info.plist */,
@@ -214,7 +214,7 @@
 			files = (
 				C099357A26C44F43006E8B60 /* Api.swift in Sources */,
 				C099357D26C45001006E8B60 /* Channel.swift in Sources */,
-				C086B36626C434E100339405 /* ViewController.swift in Sources */,
+				C086B36626C434E100339405 /* LoginViewController.swift in Sources */,
 				C099357F26C58152006E8B60 /* User.swift in Sources */,
 				C099358226C58A23006E8B60 /* JSONDecoderExtensions.swift in Sources */,
 				C086B36426C434E100339405 /* AppDelegate.swift in Sources */,

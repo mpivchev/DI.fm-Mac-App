@@ -18,9 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
           button.action = #selector(togglePopover(_:))
         }
 
-        popover.contentViewController = PopoverViewController.new()
-
-        // Insert code here to initialize your application
+        popover.contentViewController = LoginViewController.new()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
